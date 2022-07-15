@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-container {
+    max-width: 80%;
+    margin: 3rem auto;
+    padding-bottom: 3rem;
+}
+
+#main-container header {
+    padding: 20px;
+}
+
+#main-container header h1 {
+    text-align: center;
+}
+
+#main-container main #intro-container,
+#main-container main #promo-container {
+    margin: 2rem auto;
+    max-width:50%;
+}
+
+#main-container main #intro-container #intro-text {
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+#main-container main #promo-container #promo-text,
+#main-container main #promo-container #promo-text a {
+    line-height: 1.6;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+#main-container main table {
+    margin: auto;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+#main-container main table tr {
+    padding: 20px;
+}
+
+#main-container main table tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+#main-container main table tr td {
+    padding: 20px;
+}
+
+#main-container main table tr td:first-of-type {
+    font-family: monospace;
+}
+
+#main-container main table tr td:nth-of-type(2),
+#main-container main table tr td:nth-of-type(3)  {
+    text-transform: capitalize;
+}
+
+#main-container main table th {
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    text-align: left;
+}
+
+#main-container main table th:nth-of-type(2) {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#main-container main #promo-container #promo-text a {
+    text-decoration: none;
+    color: coral;
+}
+
+#main-container main #promo-container #promo-text a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 60px;
+    background-color: coral;
+}
+
+footer #creds {
+    max-width: 80%;
+    margin: auto;
+}
+
+footer #creds p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+footer #creds p a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+footer #creds p a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 424px) {
+    #main-container {
+        max-width: 95%;
+    }
+
+    #main-container main #intro-container,
+        #main-container main #promo-container {
+        max-width: 100%;
+    }
+    #main-container main table tr td {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
